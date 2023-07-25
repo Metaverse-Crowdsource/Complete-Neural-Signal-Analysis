@@ -1,12 +1,12 @@
-<h1 align="center">EEG tES Chaos Neural Net</h1>
+<h1 align="center">EEG Transcranial Electrical Stimulation Chaos Neural Net</h1>
 
 ---
 
-**Article:** [https://doi.org/10.1038/s41597-021-01046-y](https://doi.org/10.1038/s41597-021-01046-y)
+**Article:** <a href="https://doi.org/10.1038/s41597-021-01046-y" style="color: red;">https://doi.org/10.1038/s41597-021-01046-y</a>
 
-**Dataset:** [https://zenodo.org/record/3840615#.ZK2hJdLMKRQ](https://zenodo.org/record/3840615#.ZK2hJdLMKRQ)
+**Dataset:** <a href="https://zenodo.org/record/3840615#.ZK2hJdLMKRQ" style="color: red;">https://zenodo.org/record/3840615#.ZK2hJdLMKRQ</a>
 
-**Table of stimulation condition and stimulation intensity:** [https://www.nature.com/articles/s41597-021-01046-y/tables/2](https://www.nature.com/articles/s41597-021-01046-y/tables/2)
+**Table of stimulation condition and stimulation intensity:** <a href="https://www.nature.com/articles/s41597-021-01046-y/tables/2" style="color: red;">https://www.nature.com/articles/s41597-021-01046-y/tables/2</a>
 
 ---
 
