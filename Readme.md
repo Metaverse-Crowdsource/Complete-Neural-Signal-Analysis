@@ -1,6 +1,4 @@
-<p align="center">
-  <h2>EEG tES Chaos Neural Net</h2>
-</p>
+<h1 align="center">EEG tES Chaos Neural Net</h1>
 
 ---
 
@@ -34,7 +32,4 @@ Participants maintained a ball at the center of the screen and were periodically
 | ptrackerPerf   | The CTT data deviation/ the behavioral data                         |
 | ptrackerTime   | Time vector for the CTT data                                        |
 | ptrackerfs     | The sampling frequency for the CTT data: 100 Hz                     |
-
----
-
 
