@@ -1,4 +1,4 @@
-<h1 align="center">EEG Prediction from Transcranial Electrical Stimulation Chaos Recurrent Neural Net</h1>
+<h1 align="center">EEG Prediction from Transcranial Electrical Stimulation Chaos Recurrent Convolutional Neural Net</h1>
 
 ---
 
