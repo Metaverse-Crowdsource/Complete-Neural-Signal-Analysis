@@ -62,7 +62,8 @@ Participants maintained a ball at the center of the screen and were periodically
 <br>
 <br>
 <h1 align="center">Variables</h1>
-
+<br>
+<br>
 | Variable       | Description                                                         |
 |----------------|---------------------------------------------------------------------|
 | triggers       | These are all the labeled EEG/Stimulation start/stop triggers       |
