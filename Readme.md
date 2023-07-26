@@ -56,7 +56,6 @@ Participants maintained a ball at the center of the screen and were periodically
 
 | Variable       | Description                                                         |
 |----------------|---------------------------------------------------------------------|
-|           |                                                                     |
 | triggers       | These are all the labeled EEG/Stimulation start/stop triggers       |
 | EEGdata        | Contains the downsampled EEG/ECG/EOG voltage data dims: 35 channels X ~4E6 samples |
 | fs             | The downsampled sampling frequency of the data: 1000 Hz             |
