@@ -2,9 +2,10 @@
 
 <p align="center">
   <a href="https://discord.gg/HBHGvDxDmt">
-    <img src="https://img.shields.io/endpoint?url=https://discordapp.com/api/guilds/1019958048363647047/widget.json&style=for-the-badge&label=Metaverse%20Crowdsource&color=7289DA&logo=discord" alt="Discord server">
+    <img src="https://img.shields.io/static/v1?label=Metaverse%20Crowdsource&message=500%20Members&color=7289DA&logo=discord&style=plastic" alt="Discord server">
   </a>
 </p>
+
 
 
 <h1 align="center">Purpose</h1>
