@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://discord.gg/HBHGvDxDmt">
-    <img src="https://img.shields.io/discord/1019958048363647047?color=7289DA&label=Join%20our%20Discord&logo=discord&logoColor=white&style=for-the-badge" alt="Discord server">
+    <img src="https://discord.com/api/guilds/1019958048363647047/widget.png" alt="Discord server">
   </a>
 </p>
 
