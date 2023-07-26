@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://discord.gg/HBHGvDxDmt">
-    <img src="https://img.shields.io/static/v1?label=Metaverse%20Crowdsource&message=500%20Members&color=7289DA&logo=discord&style=plastic" alt="Discord server">
+    <img src="https://img.shields.io/static/v1?label=Metaverse%20Crowdsource&message=450%20Members&color=7289DA&logo=discord&style=plastic" alt="Discord server">
   </a>
 </p>
 
