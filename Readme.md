@@ -1,9 +1,8 @@
 <h1 align="center">EEG Prediction from Transcranial Electrical Stimulation(tES) using Chaos Theory, Dynamical Systems Theory, a Recurrent Neural Net(RNN), and a Convolutional Neural Net(CNN)</h1>
 
 <p align="center">
-  <a href="https://discord.gg/HBHGvDxDmt" style="display: inline-block; background-color: #7289DA; color: #FFFFFF; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
-    <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-0.png" alt="Discord logo" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">
-    Join our Discord server
+  <a href="https://discord.gg/HBHGvDxDmt">
+    <img src="https://img.shields.io/badge/-Join%20our%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord logo" width="20" height="20">
   </a>
 </p>
 
