@@ -1,11 +1,10 @@
 <h1 align="center">EEG Prediction from Transcranial Electrical Stimulation(tES) using Chaos Theory, Dynamical Systems Theory, a Recurrent Neural Net(RNN), and a Convolutional Neural Net(CNN)</h1>
 
 <p align="center">
-  <a href="https://discord.gg/HBHGvDxDmt" title="Metaverse Crowdsource">
-    <img src="https://discord.com/api/guilds/1019958048363647047/widget.png" alt="Discord server">
+  <a href="https://discord.gg/HBHGvDxDmt">
+    <img src="https://img.shields.io/endpoint?url=https://discordapp.com/api/guilds/1019958048363647047/widget.json&style=for-the-badge&label=Metaverse%20Crowdsource&color=7289DA&logo=discord" alt="Discord server">
   </a>
 </p>
-
 
 
 <h1 align="center">Purpose</h1>
