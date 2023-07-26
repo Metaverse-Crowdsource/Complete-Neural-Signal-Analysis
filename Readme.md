@@ -2,9 +2,10 @@
 
 <p align="center">
   <a href="https://discord.gg/HBHGvDxDmt">
-    <img src="https://img.shields.io/badge/-Join%20our%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord logo" width="20" height="20">
+    <img src="https://img.shields.io/discord/1234567890?color=7289DA&label=Join%20our%20Discord&logo=discord&logoColor=white&style=for-the-badge" alt="Discord server">
   </a>
 </p>
+
 
 <h1 align="center">Purpose</h1>
 
