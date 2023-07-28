@@ -1,18 +1,22 @@
 name: Discord Notification
-
 on:
   push:
     branches:
-      - main  # Adjust the branch name as needed
+      - main  # Replace "main" with the branch you want to trigger the notification on
 
 jobs:
-  discord_notification:
+  send_notification:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Send Discord message
-        uses: discord/discord-action@v2
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          content: "New commit pushed by ${{ github.actor }}: ${{ github.sha }}"
+      - name: Send Discord Notification
+        env:
+          DISCORD_WEBHOOK_ID: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          DISCORD_WEBHOOK_TOKEN: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "New commit! Check out the latest changes: 'https://github.com/your-username/your-repo/commits/${{ github.ref }}'"
+            }' \
+            "https://discord.com/api/webhooks/${DISCORD_WEBHOOK_ID}/${DISCORD_WEBHOOK_TOKEN}"
+
