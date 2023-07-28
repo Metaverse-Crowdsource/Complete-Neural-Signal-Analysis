@@ -131,4 +131,5 @@ Participants maintained a ball at the center of the screen and were periodically
 | 7    | 1       | 701      |    |    |    | 4  | 5  | 6  |     |     |     | P5             | F5             | M5             | 0.5                     | 0.5                     | 0.5                     |
 | 7    | 2       | 702      | 1  | 2  | 3  |    |    |    |     |     |     | M0             | P0             | F0             | 0.5                     | 0.5                     |
 
+Blocks with trials that encountered technical errors are indicated with black diamonds (♦) under the Stim Type section.
 
