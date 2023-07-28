@@ -2,7 +2,7 @@ name: Discord Notification
 on:
   push:
     branches:
-      - main  # Replace "main" with the branch you want to trigger the notification on
+      - main
 
 jobs:
   send_notification:
@@ -16,7 +16,8 @@ jobs:
           curl -X POST \
             -H "Content-Type: application/json" \
             -d '{
-              "content": "New commit! Check out the latest changes: 'https://github.com/your-username/your-repo/commits/${{ github.ref }}'"
+              "content": "New commit! Check out the latest changes: https://github.com/your-username/your-repo/commits/${{ github.ref }}"
             }' \
             "https://discord.com/api/webhooks/${DISCORD_WEBHOOK_ID}/${DISCORD_WEBHOOK_TOKEN}"
+
 
