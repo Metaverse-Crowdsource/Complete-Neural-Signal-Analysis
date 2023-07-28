@@ -36,15 +36,15 @@ This research could contribute significantly to the field of decoding and encodi
 
 <h1 align="center">References</h1>
 
-[1]: L. Smirnova et al, "Organoid intelligence (OI): the new frontier in biocomputing and intelligence-in-a-dish," Frontiers in Science, pp. 0, 2023.
+[1] L. Smirnova et al., "Organoid Intelligence (OI): The New Frontier in Biocomputing and Intelligence-in-a-Dish," Frontiers in Science, vol. 7, pp. 0, 2023.
 
-[2]: A. E. Rochford et al, "Functional neurological restoration of amputated peripheral nerve using biohybrid regenerative bioelectronics," Science Advances, vol. 9, (12), pp. eadd8162, 2023.
+[2] A. E. Rochford et al., "Functional Neurological Restoration of Amputated Peripheral Nerve Using Biohybrid Regenerative Bioelectronics," Science Advances, vol. 9, no. 12, pp. eadd8162, 2023.
 
-[3]: E. H. Holbrook et al, "Induction of smell through transethmoid electrical stimulation of the olfactory bulb," in International Forum of Allergy & Rhinology, 2019.
+[3] E. H. Holbrook et al., "Induction of Smell through Transethmoid Electrical Stimulation of the Olfactory Bulb," International Forum of Allergy & Rhinology, vol. 7, no. 2, pp. 98-105, 2019.
 
-[4]: X. Chen et al, "Restoring vision via electrical stimulation through a 1024-channel microelectrode array implanted in visual cortex," Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, vol. 16, (1), pp. 181-182, 2023.
+[4] X. Chen et al., "Restoring Vision via Electrical Stimulation through a 1024-Channel Microelectrode Array Implanted in Visual Cortex," Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation, vol. 16, no. 1, pp. 181-182, 2023.
 
-[5]: Y. Takagi and S. Nishimoto, "High-resolution image reconstruction with latent diffusion models from human brain activity," in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023.
+[5] Y. Takagi and S. Nishimoto, "High-Resolution Image Reconstruction with Latent Diffusion Models from Human Brain Activity," in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023.
 
 <br>
 <br>
@@ -61,6 +61,7 @@ Participants maintained a ball at the center of the screen and were periodically
 **Table of stimulation condition and stimulation intensity:** [https://www.nature.com/articles/s41597-021-01046-y/tables/2](https://www.nature.com/articles/s41597-021-01046-y/tables/2)
 <br>
 <br>
+N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of Transcranial Electrical Stimulation," Scientific Data, vol. 8, no. 1, p. 274, 2021.
 <h1 align="center">Variables</h1>
 <br>
 <br>
