@@ -1,0 +1,18 @@
+name: Discord Notification
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+
+jobs:
+  discord_notification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord message
+        uses: discord/discord-action@v2
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          content: "New commit pushed by ${{ github.actor }}: ${{ github.sha }}"
