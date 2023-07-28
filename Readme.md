@@ -78,6 +78,8 @@ Participants maintained a ball at the center of the screen and were periodically
 | npt            | Number of data points ~4E6                                          |
 | Subj           | Subject and session that data
 
+<br>
+<br>
 
 | Stim Type | Dominant Frequency (Hz) | Stim Amplitude (mA) |
 |-----------|-------------------------|--------------------|
@@ -91,13 +93,17 @@ Participants maintained a ball at the center of the screen and were periodically
 | P5 (Parietal 5 Hz)  | 5                       | 0.5                |
 | P30 (Parietal 30 Hz)| 30                      | 0.5                |
 
-    
+<br>
+<br>
+
     Trigger Code | Description
 ------------ | ---------------
 02           | Start of the CTT
 16           | Start of each stimulation trial
 32           | Stimulation stop (end of 30 secs stimulation)
 
+<br>
+<br>
 
 | Sub# | Session | File Num | F0 | M0 | P0 | F5 | M5 | P5 | F30 | M30 | P30 | StimTypeBlock1 | StimTypeBlock2 | StimTypeBlock3 | StimAmplitude_mA_block1 | StimAmplitude_mA_block2 | StimAmplitude_mA_block3 |
 |------|---------|----------|----|----|----|----|----|----|-----|-----|-----|----------------|----------------|----------------|-------------------------|-------------------------|-------------------------|
