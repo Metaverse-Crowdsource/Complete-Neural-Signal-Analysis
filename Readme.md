@@ -96,11 +96,12 @@ Participants maintained a ball at the center of the screen and were periodically
 <br>
 <br>
 
-    Trigger Code | Description
------------- | ---------------
-02           | Start of the CTT
-16           | Start of each stimulation trial
-32           | Stimulation stop (end of 30 secs stimulation)
+| Trigger Code | Description                                     |
+|--------------|-------------------------------------------------|
+| 02           | Start of the CTT                                |
+| 16           | Start of each stimulation trial                |
+| 32           | Stimulation stop (end of 30 secs stimulation)   |
+
 
 <br>
 <br>
