@@ -1,26 +1,16 @@
-name: Discord Notification
-on:
-  push:
-    branches:
-      - main
+name: Send discord notification
+on: [push]
 
 jobs:
-  send_notification:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug step
-        run: echo "This is a debug step"
-      - name: Send Discord Notification
-        env:
-          DISCORD_WEBHOOK_ID: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          DISCORD_WEBHOOK_TOKEN: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-        run: |
-          curl -X POST \
-            -H "Content-Type: application/json" \
-            -d '{
-              "content": "New commit! Check out the latest changes: https://github.com/your-username/your-repo/commits/${{ github.sha }}"
-            }' \
-            "https://discord.com/api/webhooks/${DISCORD_WEBHOOK_ID}/${DISCORD_WEBHOOK_TOKEN}"
-
-
-
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Send Discord notification
+      env:
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      run: |
+        COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
+        COMMIT_DESCRIPTION=$(git log -1 --pretty=format:"%b")
+        curl -X POST -H "Content-Type: application/json" -d "{ \"content\": \"New commit! Check out the latest changes: https://github.com/your-username/your-repo/commits/${{ github.sha }}\", \"embeds\": [ { \"title\": \"$COMMIT_MESSAGE\", \"description\": \"$COMMIT_DESCRIPTION\" } ] }" $WEBHOOK_URL
