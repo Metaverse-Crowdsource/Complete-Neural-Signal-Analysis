@@ -8,6 +8,8 @@ jobs:
   send_notification:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug step
+        run: echo "This is a debug step"
       - name: Send Discord Notification
         env:
           DISCORD_WEBHOOK_ID: ${{ secrets.DISCORD_WEBHOOK_ID }}
@@ -16,8 +18,9 @@ jobs:
           curl -X POST \
             -H "Content-Type: application/json" \
             -d '{
-              "content": "New commit! Check out the latest changes: https://github.com/your-username/your-repo/commits/${{ github.ref }}"
+              "content": "New commit! Check out the latest changes: https://github.com/your-username/your-repo/commits/${{ github.sha }}"
             }' \
             "https://discord.com/api/webhooks/${DISCORD_WEBHOOK_ID}/${DISCORD_WEBHOOK_TOKEN}"
+
 
 
