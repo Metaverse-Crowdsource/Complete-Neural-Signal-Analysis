@@ -79,20 +79,6 @@ N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, 
 | npt            | Number of data points ~4E6                                          |
 | Subj           | Subject and session that data
 
-<br>
-<br>
-
-| Stim Type | Dominant Frequency (Hz) | Stim Amplitude (mA) |
-|-----------|-------------------------|--------------------|
-| F0 (Frontal DC)     | 0                       | 0.5                |
-| F5 (Frontal 5 Hz)   | 5                       | 0.5                |
-| F30 (Frontal 30 Hz) | 30                      | 0.5                |
-| M0 (Motor DC)       | 0                       | 0.5                |
-| M5 (Motor 5 Hz)     | 5                       | 0.5                |
-| M30 (Motor 30 Hz)   | 30                      | 0.5                |
-| P0 (Parietal DC)    | 0                       | 0.5                |
-| P5 (Parietal 5 Hz)  | 5                       | 0.5                |
-| P30 (Parietal 30 Hz)| 30                      | 0.5                |
 
 <br>
 <br>
