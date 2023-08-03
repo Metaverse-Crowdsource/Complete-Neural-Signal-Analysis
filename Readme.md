@@ -35,13 +35,17 @@ This research could potentially contribute to the ambitious goal of directly sti
 This research could contribute significantly to the field of decoding and encoding sensory perceptions in the human brain. The proposed model, which integrates chaos theory, dynamical systems theory, and a neural network stack, could provide a robust and comprehensive tool for understanding how the brain responds to tES. Such an understanding is critical for decoding brain activity associated with sensual perception. Specifically, the proposed use of transfer entropy to measure causal relationships within the brain could provide unique insights into how different sensory regions interact and coordinate to produce perceptions. Once these perceptions are decoded[5], it becomes theoretically possible to encode similar patterns back into the brain. The development of a predictive model capable of accurately capturing these dynamics would be a pivotal step towards this goal. Thus, while the immediate focus of the research is predicting EEG effects of tES, the methodologies and insights derived from the work have broader implications and could be foundational for future efforts aimed at decoding and encoding sensual perceptions in the brain.
 
 encoding sensual perceptions in the brain.
-
 <br>
 <br>
-Choose the eeg data file and create your dataframes with the steps here,  **[here](https://github.com/Metaverse-Crowdsource/EEG-tES-Chaos-Neural-Net/blob/main/Data%20Loading%20and%20Variable%20Assigning.ipynb)**.
+<h1 align="center">How to use the code</h1>
 <br>
 <br>
-
+Choose the eeg data file and create your dataframes with the steps (https://github.com/Metaverse-Crowdsource/EEG-tES-Chaos-Neural-Net/blob/main/Data%20Loading%20and%20Variable%20Assigning.ipynb).
+<br>
+<br>
+Work in progress...
+<br>
+<br>
 <h1 align="center">References</h1>
 
 
