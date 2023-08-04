@@ -1,0 +1,13 @@
+digraph {
+	LoadData [label="Load Data" fontsize=12 shape=rect]
+	FillNull [label="Fill Null Values" fontsize=12 shape=rect]
+	FilterUnwanted [label="Filter Unwanted Channels" fontsize=12 shape=rect]
+	TransposeEEG [label="Transpose EEG Data" fontsize=12 shape=rect]
+	DataFrameEEG [label="Create EEG DataFrame" fontsize=12 shape=rect]
+	DataFrameTriggers [label="Create Triggers DataFrame" fontsize=12 shape=rect]
+	LoadData -> FillNull [label="Load Data" fontsize=10]
+	FillNull -> FilterUnwanted [label="Fill Null Values" fontsize=10]
+	FilterUnwanted -> TransposeEEG [label="Filter Unwanted Channels" fontsize=10]
+	TransposeEEG -> DataFrameEEG [label="Transpose EEG Data" fontsize=10]
+	DataFrameEEG -> DataFrameTriggers [label="Create EEG DataFrame" fontsize=10]
+}

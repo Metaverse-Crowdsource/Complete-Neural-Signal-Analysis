@@ -1,0 +1,5 @@
+hidden_dim: 64
+input_dim: 10
+layer_dim: 3
+learning_rate: 4.6432725078869266e-05
+output_dim: 1
