@@ -1,1 +1,0 @@
-converted rnn and cnn mfdfa data, hurst exponenets data, to csv. updated data loading to include these variables, add some blocks to RNN
