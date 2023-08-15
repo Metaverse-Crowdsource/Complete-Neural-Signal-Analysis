@@ -41,7 +41,7 @@ encoding sensual perceptions in the brain.
 <h1 align="center">How to use the code</h1>
 <br>
 <br>
-Choose the eeg data file and create your dataframes with the steps (https://github.com/Metaverse-Crowdsource/EEG-tES-Chaos-Neural-Net/blob/main/Data%20Loading%20and%20Variable%20Assigning.ipynb).
+Choose the dsamp eeg data file and go through this process first so you have your necessary data ready to go (https://github.com/Metaverse-Crowdsource/EEG-tES-Chaos-Neural-Net/blob/main/Data%20Loading%20and%20Variable%20Assigning.ipynb).
 <br>
 <br>
 Work in progress...
@@ -98,41 +98,4 @@ N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, 
 
 <br>
 <br>
-
-| Trigger Code | Description                                     |
-|--------------|-------------------------------------------------|
-| 02           | Start of the CTT                                |
-| 16           | Start of each stimulation trial                |
-| 32           | Stimulation stop (end of 30 secs stimulation)   |
-
-
-<br>
-<br>
-
-| Sub# | Session | File Num | F0 | M0 | P0 | F5 | M5 | P5 | F30 | M30 | P30 | StimTypeBlock1 | StimTypeBlock2 | StimTypeBlock3 | StimAmplitude_mA_block1 | StimAmplitude_mA_block2 | StimAmplitude_mA_block3 |
-|------|---------|----------|----|----|----|----|----|----|-----|-----|-----|----------------|----------------|----------------|-------------------------|-------------------------|-------------------------|
-| 1    | 1       | 101      | 1  |    |    |    |    |    | 7   | 8   |     | M30            | F30            | F0♦            | 1                       | 1                       | 1                       |
-| 1    | 2       | 102      | 1  |    |    |    |    |    | 7   | 8   |     | M30            | F30            | F0♦            | 0.5                     | 0.5                     | 0.5                     |
-| 1    | 3       | 103      |    |    | 3  |    |    |    | 6   |     |     | 9              | P30            | P0             | 0.5                     | 0.5                     | 0.5                     |
-| 1    | 4       | 104      |    | 2  |    | 4  | 5  |    |     |     |     | F5             | M5             | M0             | 0.5                     | 0.5                     | 0.5                     |
-| 1    | 5       | 105      |    | 2  |    | 4  | 5  |    |     |     |     | F5             | M5             | M0             | 1                       | 1                       | 1                       |
-| 1    | 6       | 106      |    |    | 3  |    |    |    | 6   |     |     | 9              | P30            | P0             | 1                       | 1                       | 1                       |
-| 2    | 1       | 201      |    |    |    | 4  |    |    | 7   |     | 9   | F30♦          | F5             | P30            | 0.5                     | 0.5                     | 0.5                     |
-| 2    | 2       | 202      |    |    | 3  |    | 5  |    |     | 8   |     | P0             | M5             | M30            | 0.5                     | 0.5                     | 0.5                     |
-| 3    | 1       | 301      |    | 2  | 3  |    |    |    | 7   |     |     | M0             | P0             | F30            | 0.5                     | 0.5                     | 0.5                     |
-| 3    | 2       | 302      |    |    |    | 4  |    | 6  |     |     |     | F5             | P5             | P30            | 0.5                     | 0.5                     | 0.5                     |
-| 3    | 3       | 303      | 1  |    |    |    | 5  |    |     |     | 8   | M5             | F0             | M30            | 0.5                     | 0.5                     | 0.5                     |
-| 4    | 1       | 401      |    |    |    | 4  |    |    |     | 8   | 9   | P30            | M30            | F5             | 0.5                     | 0.5                     | 0.5                     |
-| 4    | 2       | 402      | 1  | 2  | 3  |    |    |    |     |     |     | P0             | F0             | M0             | 1                       | 1                       | 1                       |
-| 4    | 3       | 403      |    |    |    |    | 5  | 6  | 7   |     |     | F30            | M5             | P5             | 1                       | 1                       | 1                       |
-| 5    | 1       | 501      |    |    | 3  |    | 5  | 6  |     |     |     | M5             | P0             | P5             | 0.5                     | 1                       | 1                       |
-| 5    | 4       | 504      |    | 2  |    |    |    |    |     | 8   | 9   | P30            | M30            | M0             | 1                       | 1                       | 1                       |
-| 5    | 5       | 505      | 1  |    |    | 4  |    |    | 7   |     |     | F30            | F0             | F5             | 1                       | 1                       | 0.5                     |
-| 6    | 1       | 601      | 1  |    |    | 4  |    | 6  |     |     |     | F0             | F5             | P5             | 1                       | 0.5                     | 1                       |
-| 6    | 2       | 602      |    |    |    |    |    |    | 7   | 8   | 9   | F30            | M30            | P30            | 0.5                     | 1                       | 1                       |
-| 6    | 3       | 603      |    | 2  | 3  |    | 5  |    |     |     |     | P0             | M5             | M0             | 1                       | 1                       | 1                       |
-| 7    | 1       | 701      |    |    |    | 4  | 5  | 6  |     |     |     | P5             | F5             | M5             | 0.5                     | 0.5                     | 0.5                     |
-| 7    | 2       | 702      | 1  | 2  | 3  |    |    |    |     |     |     | M0             | P0             | F0             | 0.5                     | 0.5                     |
-
-Blocks with trials that encountered technical errors are indicated with black diamonds (♦) under the Stim Type section.
 
