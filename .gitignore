@@ -1,1 +1,6 @@
 .ipynb_checkpoints/
+# Ignore all .tmp files
+*.tmp
+
+# Ignore all files in a temp/ directory
+temp/
