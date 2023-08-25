@@ -4,3 +4,5 @@
 
 # Ignore all files in a temp/ directory
 temp/
+
+temp_concat_chunk_*.pt
