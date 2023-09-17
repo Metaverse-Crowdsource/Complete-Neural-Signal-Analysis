@@ -1,5 +1,5 @@
 ![Image](Images/00092.png)
-<h1 align="center">EEG Prediction using Chaos Theory, Dynamical Systems Theory, a Kuramoto Oscillator, a Conditional Recurrent Neural Net(RNN), a Convolutional Neural Net(CNN), and Two Transformer Neural Nets</h1>
+<h1 align="center">EEG Prediction using Chaos Theory, Dynamical Systems Theory, a Kuramoto Oscillator, a Conditional Recurrent Neural Net(RNN), a Convolutional Neural Net(CNN), and Transformer Neural Nets</h1>
 
 
 <div align="center">
