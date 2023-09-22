@@ -47,6 +47,23 @@ Choose the dsamp eeg data file and go through this process first so you have you
 Work in progress...
 <br>
 <br>
+<h1 align="center">Dependencies</h1>
+numpy: 1.24.3
+matplotlib: 3.7.0
+scipy: 1.10.1
+torch: 2.0.1+cu117
+torchdiffeq: 0.2.3
+torchsummary: Unknown version
+minepy: b'1.2.6'
+pyrqa: Unknown version
+pyts: 0.12.0
+MFDFA: 0.4.3
+pyinform: Unknown version
+graphviz: 0.20.1
+fa2: Unknown version
+networkx: 3.0
+<br>
+<br>
 <h1 align="center">References</h1>
 
 
