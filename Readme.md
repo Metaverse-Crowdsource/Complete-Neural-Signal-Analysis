@@ -49,18 +49,31 @@ Work in progress...
 <br>
 <h1 align="center">Dependencies</h1>
 numpy: 1.24.3
+<br>
 matplotlib: 3.7.0
+<br>
 scipy: 1.10.1
+<br>
 torch: 2.0.1+cu117
+<br>
 torchdiffeq: 0.2.3
+<br>
 torchsummary: Unknown version
+<br>
 minepy: b'1.2.6'
+<br>
 pyrqa: Unknown version
+<br>
 pyts: 0.12.0
+<br>
 MFDFA: 0.4.3
+<br>
 pyinform: Unknown version
+<br>
 graphviz: 0.20.1
+<br>
 fa2: Unknown version
+<br>
 networkx: 3.0
 <br>
 <br>
