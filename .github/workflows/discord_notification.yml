@@ -7,10 +7,19 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Send Discord notification
+      
+    - name: Send Discord notification to Server 1
       env:
-        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        WEBHOOK_URL_1: ${{ secrets.WEBHOOK_URL }}
       run: |
         COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
         COMMIT_DESCRIPTION=$(git log -1 --pretty=format:"%b")
         curl -X POST -H "Content-Type: application/json" -d "{ \"content\": \"New commit! Check out the latest changes: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/commits/${{ github.sha }}\", \"embeds\": [ { \"title\": \"$COMMIT_MESSAGE\", \"description\": \"$COMMIT_DESCRIPTION\" } ] }" $WEBHOOK_URL
+
+    - name: Send Discord notification to Server 2
+      env:
+        WEBHOOK_URL_2: ${{ secrets.URC_WEBHOOK_URL }}
+      run: |
+        COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")
+        COMMIT_DESCRIPTION=$(git log -1 --pretty=format:"%b")
+        curl -X POST -H "Content-Type: application/json" -d "{ \"content\": \"New commit! Check out the latest changes: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/commits/${{ github.sha }}\", \"embeds\": [ { \"title\": \"$COMMIT_MESSAGE\", \"description\": \"$COMMIT_DESCRIPTION\" } ] }" $URC_WEBHOOK_URL
