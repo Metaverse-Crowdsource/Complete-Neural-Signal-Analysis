@@ -14,8 +14,11 @@
     <img src="https://img.shields.io/badge/TikTok-%40metaversecrowdsourcebr-ff0080?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=000000" alt="TikTok Profile">
   </a>
 </div>
-
-
+<div align="center">
+  <a href="https://discord.gg/mJECK72VhD">
+    <img src="https://img.shields.io/static/v1?label=Unlimited%20Research%20Cooperative&message=Join%20Now&color=7289DA&logo=discord&style=for-the-badge" alt="Discord server">
+  </a>
+</div>
 <br>
 <br>
 <h1 align="center">Purpose</h1>
@@ -34,8 +37,6 @@ Accurately predicting the brain's reactions to tES could enable us to fine-tune 
 This research could potentially contribute to the ambitious goal of directly stimulating sensorial perceptions in the human brain[3][4], a feat which, if achieved, would revolutionize neuroprosthetics and human-computer interfaces. The brain's sensorial system is intricate, involving a complex network of interconnected regions responsible for processing and interpreting different aspects of sensory information. The endeavor to predict EEG effects of tES using a multidisciplinary approach could shed light on how this complex system responds to external stimulation, and could possibly inform targeted, controlled stimulation techniques. While the research is not directly aimed at inducing visual perceptions, the insights and methodologies derived from the work could serve as a stepping stone towards understanding how to interface with the brain's sensory nervous system more effectively. It's crucial to note that this potential application would need to address substantial scientific, technical, and ethical challenges. Despite these hurdles, the promise of such a breakthrough underscores the broad-reaching implications of our research and its potential to catalyze advances in several areas of neuroscience and neurotechnology.
 
 This research could contribute significantly to the field of decoding and encoding sensory perceptions in the human brain. The proposed model, which integrates chaos theory, dynamical systems theory, and a neural network stack, could provide a robust and comprehensive tool for understanding how the brain responds to tES. Such an understanding is critical for decoding brain activity associated with sensual perception. Specifically, the proposed use of transfer entropy to measure causal relationships within the brain could provide unique insights into how different sensory regions interact and coordinate to produce perceptions. Once these perceptions are decoded[5], it becomes theoretically possible to encode similar patterns back into the brain. The development of a predictive model capable of accurately capturing these dynamics would be a pivotal step towards this goal. Thus, while the immediate focus of the research is predicting EEG effects of tES, the methodologies and insights derived from the work have broader implications and could be foundational for future efforts aimed at decoding and encoding sensual perceptions in the brain.
-
-encoding sensual perceptions in the brain.
 <br>
 <br>
 <h1 align="center">How to use the code</h1>
@@ -98,11 +99,17 @@ Data include within participant application of nine High-Definition tES (HD-tES)
 
 Participants maintained a ball at the center of the screen and were periodically stimulated (with low-intensity noninvasive brain stimulation) for 30 secs with combinations of 9 stimulation montages.
 
+
+**Our Research Report:** [Artificial Intelligence for EEG Prediction: Applied Chaos Theory](https://static1.squarespace.com/static/633b0228f2e6e5632a4aa432/t/6526b39fef593d19878d0b44/1697036259969/Artificial+Intelligence+for+EEG+Prediction%3A+Applied+Chaos+Theory.pdf)
+
 **Dataset Article:** [https://doi.org/10.1038/s41597-021-01046-y](https://doi.org/10.1038/s41597-021-01046-y)
 
 **Dataset:** [https://zenodo.org/record/3840615#.ZK2hJdLMKRQ](https://zenodo.org/record/3840615#.ZK2hJdLMKRQ)
 
 **Table of stimulation condition and stimulation intensity:** [https://www.nature.com/articles/s41597-021-01046-y/tables/2](https://www.nature.com/articles/s41597-021-01046-y/tables/2)
+<br>
+<br>
+S. Syrup and Metaverse Crowdsource, “Artificial Intelligence for EEG Prediction: Applied Chaos Theory,” Unlimited Research Cooperative, 2023, doi: 10.13140/RG.2.2.30204.51849.
 <br>
 <br>
 N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of Transcranial Electrical Stimulation," Scientific Data, vol. 8, no. 1, p. 274, 2021.
@@ -129,5 +136,5 @@ N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, 
 <br>
 <br>
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">EEG-Chaos-Kuramoto-Neural-Net</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net" property="cc:attributionName" rel="cc:attributionURL">Metaverse Crowdsource</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net" rel="dct:source">https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net" rel="cc:morePermissions">https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">EEG-Chaos-Kuramoto-Neural-Net</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net" property="cc:attributionName" rel="cc:attributionURL">Metaverse Crowdsource</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory#fullTextFileContent" rel="dct:source">https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory#fullTextFileContent</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net" rel="cc:morePermissions">https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net</a>.
 
