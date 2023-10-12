@@ -106,6 +106,9 @@ Participants maintained a ball at the center of the screen and were periodically
 **Table of stimulation condition and stimulation intensity:** [https://www.nature.com/articles/s41597-021-01046-y/tables/2](https://www.nature.com/articles/s41597-021-01046-y/tables/2)
 <br>
 <br>
+S. Syrup and Metaverse Crowdsource, “Artificial Intelligence for EEG Prediction: Applied Chaos Theory,” Unlimited Research Cooperative, 2023, doi: 10.13140/RG.2.2.30204.51849.
+<br>
+<br>
 N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of Transcranial Electrical Stimulation," Scientific Data, vol. 8, no. 1, p. 274, 2021.
 <br>
 <br>
