@@ -48,7 +48,9 @@ Choose the dsamp eeg data file and go through this process first so you have you
 Work in progress...
 <br>
 <br>
-<h1 align="center">Dependencies (Some ipynb's have different dependencies. each ipynb has its own folder, with the dependencies included in their respective folder.</h1>
+<h1 align="center">Dependencies </h1>
+(Some ipynb's have different dependencies. each ipynb has its own folder, with the dependencies included in their respective folder)
+<br>
 numpy: 1.24.3
 <br>
 matplotlib: 3.7.0
