@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: phase-space-2d
+Version: 0.1.0
+Summary: A Python library for calculating and plotting phase space
+Home-page: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/tree/main/Phase%20Space
+Author: soul_syrup
+Author-email: soul.syrupp@gmail.com
+
+Longer description of your package

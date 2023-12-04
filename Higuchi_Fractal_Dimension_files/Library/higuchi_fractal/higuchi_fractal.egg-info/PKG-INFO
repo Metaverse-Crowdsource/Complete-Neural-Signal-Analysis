@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: higuchi-fractal
+Version: 0.1.0
+Summary: A Python library for calculating Higuchi Fractal Dimension
+Home-page: https://github.com/yourusername/higuchi_fractal
+Author: Your Name
+Author-email: your.email@example.com
+
+Longer description of your package

@@ -1,0 +1,9 @@
+README.md
+setup.py
+welchsPSD/__init__.py
+welchsPSD/welchsPSD.py
+welchsPSD.egg-info/PKG-INFO
+welchsPSD.egg-info/SOURCES.txt
+welchsPSD.egg-info/dependency_links.txt
+welchsPSD.egg-info/requires.txt
+welchsPSD.egg-info/top_level.txt

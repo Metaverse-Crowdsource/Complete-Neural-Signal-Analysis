@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mfdfa1000hz
+Version: 0.1.0
+Summary: A Python library for calculating MFDFA for 1000hz
+Home-page: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/tree/main/Multifractal%20Analysis
+Author: soul_syrup
+Author-email: soul.syrupp@gmail.com
+
+Longer description of your package

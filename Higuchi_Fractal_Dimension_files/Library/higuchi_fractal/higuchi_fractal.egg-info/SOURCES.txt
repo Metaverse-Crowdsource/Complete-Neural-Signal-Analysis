@@ -1,0 +1,9 @@
+README.md
+setup.py
+higuchi_fractal/__init__.py
+higuchi_fractal/higuchi_fractal.py
+higuchi_fractal.egg-info/PKG-INFO
+higuchi_fractal.egg-info/SOURCES.txt
+higuchi_fractal.egg-info/dependency_links.txt
+higuchi_fractal.egg-info/requires.txt
+higuchi_fractal.egg-info/top_level.txt

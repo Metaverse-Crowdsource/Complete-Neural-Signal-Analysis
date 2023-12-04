@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: transfer-entropy-regional
+Version: 0.1.0
+Summary: A Python library for calculating transfer_entropy_regional
+Home-page: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/blob/main/Transfer%20Entropy/Transfer%20Entropy.ipynb
+Author: soul_syrup
+Author-email: soul.syrupp@gmail.com
+
+Longer description of your package

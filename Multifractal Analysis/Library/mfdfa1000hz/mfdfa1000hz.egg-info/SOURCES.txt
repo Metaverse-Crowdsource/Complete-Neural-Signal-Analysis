@@ -1,0 +1,9 @@
+README.md
+setup.py
+mfdfa1000hz/__init__.py
+mfdfa1000hz/mfdfa1000hz.py
+mfdfa1000hz.egg-info/PKG-INFO
+mfdfa1000hz.egg-info/SOURCES.txt
+mfdfa1000hz.egg-info/dependency_links.txt
+mfdfa1000hz.egg-info/requires.txt
+mfdfa1000hz.egg-info/top_level.txt

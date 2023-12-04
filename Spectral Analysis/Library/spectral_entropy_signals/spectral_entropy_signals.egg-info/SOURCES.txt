@@ -1,0 +1,9 @@
+README.md
+setup.py
+spectral_entropy_signals/__init__.py
+spectral_entropy_signals/spectral_entropy_signals.py
+spectral_entropy_signals.egg-info/PKG-INFO
+spectral_entropy_signals.egg-info/SOURCES.txt
+spectral_entropy_signals.egg-info/dependency_links.txt
+spectral_entropy_signals.egg-info/requires.txt
+spectral_entropy_signals.egg-info/top_level.txt

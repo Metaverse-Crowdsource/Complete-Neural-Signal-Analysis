@@ -1,0 +1,9 @@
+README.md
+setup.py
+frequency_max_power/__init__.py
+frequency_max_power/frequency_max_power.py
+frequency_max_power.egg-info/PKG-INFO
+frequency_max_power.egg-info/SOURCES.txt
+frequency_max_power.egg-info/dependency_links.txt
+frequency_max_power.egg-info/requires.txt
+frequency_max_power.egg-info/top_level.txt

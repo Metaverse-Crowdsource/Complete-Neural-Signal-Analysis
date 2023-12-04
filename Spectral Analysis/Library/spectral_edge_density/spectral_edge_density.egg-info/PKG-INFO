@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: spectral-edge-density
+Version: 0.1.0
+Summary: A Python library for calculating Higuchi Fractal Dimension
+Home-page: https://github.com/Metaverse-Crowdsource/EEG-Chaos-Kuramoto-Neural-Net/blob/main/Higuchi_Fractal_Dimension_files/Higuchi%20Fractal%20Dimension.ipynb
+Author: soul_syrup
+Author-email: soul.syrupp@gmail.com
+
+Longer description of your package
