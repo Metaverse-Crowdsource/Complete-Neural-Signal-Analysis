@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='transfer_entropy_regional',
-    version='0.1.0',  # Start with a small version number like 0.1.0
+    version='0.1.1',  # Start with a small version number like 0.1.0
     description='A Python library for calculating transfer_entropy_regional',
     long_description='Longer description of your package',
     author='soul_syrup',

@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='spectral_edge_,
-    version='0.1.0',  # Start with a small version number like 0.1.0
-    description='A Python library for calculating Higuchi Fractal Dimension',
+    name= 'spectral_edge_density',
+    version='0.1.1',  # Start with a small version number like 0.1.0
+    description='A Python library for calculating spectral_edge_density',
     long_description='Longer description of your package',
     author='soul_syrup',
     author_email='soul.syrupp@gmail.com',
