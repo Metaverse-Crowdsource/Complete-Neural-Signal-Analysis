@@ -1,1 +1,0 @@
-higuchi_fractal

@@ -1,0 +1,14 @@
+FFT
+MFDFA_neural
+STFTsignal
+frequency_maximum_power
+higuch_fractal_dimension
+phase_space_2d
+phase_space_3d
+spectral_centroids
+spectral_edge_density
+spectral_entropy_signals
+transfer_entropy_all_signals
+transfer_entropy_hemispheric
+transfer_entropy_regional
+welchsPSD
