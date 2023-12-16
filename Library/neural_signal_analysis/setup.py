@@ -4,9 +4,9 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Neural_Signal_Analysis',
-    version='0.2.2',
-    description='A comprehensive Python library for EEG data analysis including FFT, Higuchi Fractal Dimension, Transfer Entropy, and more.',
+    name='neural_signal_analysis',
+    version='0.2.4',
+    description='A comprehensive Python library for human brain/ cortical organoid/spheroid eeg/ecog/mea data analysis including FFT, Higuchi Fractal Dimension, Transfer Entropy, and more.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='soul_syrup',

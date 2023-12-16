@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: neural-signal-analysis
+Version: 0.2.3
+Summary: A comprehensive Python library for human brain/ cortical organoid/spheroid data analysis including FFT, Higuchi Fractal Dimension, Transfer Entropy, and more.
+Home-page: https://soulsyrup.github.io/
+Author: soul_syrup
+Author-email: soul.syrup@yandex.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
 # Neural Signal Analysis Library
 
 The `neural_signal_analysis` library is a comprehensive Python package for EEG data analysis. It encompasses a wide range of functionalities including FFT (Fast Fourier Transform), Higuchi Fractal Dimension, Transfer Entropy, Welch's Power Spectral Density, and more, providing a toolkit for researchers and developers working with neural signal data.
@@ -31,7 +49,7 @@ welchsPSD (Power Spectral Density)
 
 Example usage:
 ```bash
-import welchsPSD (no need for "from neural_signal_analysis import welchsPSD")
+from neural_signal_analysis import welchsPSD
 ```
 
 Contributing
