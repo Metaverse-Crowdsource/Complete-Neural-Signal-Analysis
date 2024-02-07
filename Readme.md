@@ -102,7 +102,7 @@ Data include within participant application of nine High-Definition tES (HD-tES)
 Participants maintained a ball at the center of the screen and were periodically stimulated (with low-intensity noninvasive brain stimulation) for 30 secs with combinations of 9 stimulation montages.
 
 
-**Our Working Research Report:** [Artificial Intelligence for EEG Prediction: Applied Chaos Theory](https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory)
+**Our Working Research Report:** [Artificial Intelligence for EEG Prediction: Applied Chaos Theory](https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory) https://arxiv.org/abs/2402.03316
 
 **Dataset Article:** [https://doi.org/10.1038/s41597-021-01046-y](https://doi.org/10.1038/s41597-021-01046-y)
 

@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='neural_signal_analysis',
-    version='0.2.4',
+    version='0.2.8',
     description='A comprehensive Python library for human brain/ cortical organoid/spheroid eeg/ecog/mea data analysis including FFT, Higuchi Fractal Dimension, Transfer Entropy, and more.',
     long_description=long_description,
     long_description_content_type='text/markdown',
