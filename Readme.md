@@ -37,12 +37,7 @@ Accurately predicting the brain's reactions to tES could enable us to fine-tune 
 This research could potentially contribute to the ambitious goal of directly stimulating sensorial perceptions in the human brain[3][4], a feat which, if achieved, would revolutionize neuroprosthetics and human-computer interfaces. The brain's sensorial system is intricate, involving a complex network of interconnected regions responsible for processing and interpreting different aspects of sensory information. The endeavor to predict EEG effects of tES using a multidisciplinary approach could shed light on how this complex system responds to external stimulation, and could possibly inform targeted, controlled stimulation techniques. While the research is not directly aimed at inducing visual perceptions, the insights and methodologies derived from the work could serve as a stepping stone towards understanding how to interface with the brain's sensory nervous system more effectively. It's crucial to note that this potential application would need to address substantial scientific, technical, and ethical challenges. Despite these hurdles, the promise of such a breakthrough underscores the broad-reaching implications of our research and its potential to catalyze advances in several areas of neuroscience and neurotechnology.
 
 This research could contribute significantly to the field of decoding and encoding sensory perceptions in the human brain. The proposed model, which integrates chaos theory, dynamical systems theory, and a neural network stack, could provide a robust and comprehensive tool for understanding how the brain responds to tES. Such an understanding is critical for decoding brain activity associated with sensual perception. Specifically, the proposed use of transfer entropy to measure causal relationships within the brain could provide unique insights into how different sensory regions interact and coordinate to produce perceptions. Once these perceptions are decoded[5], it becomes theoretically possible to encode similar patterns back into the brain. The development of a predictive model capable of accurately capturing these dynamics would be a pivotal step towards this goal. Thus, while the immediate focus of the research is predicting EEG effects of tES, the methodologies and insights derived from the work have broader implications and could be foundational for future efforts aimed at decoding and encoding sensual perceptions in the brain.
-<br>
-<br>
-<h1 align="center">How to use the code</h1>
-<br>
-<br>
-Choose the dsamp eeg data file and go through this process first so you have your necessary data ready to go (https://github.com/Metaverse-Crowdsource/EEG-tES-Chaos-Neural-Net/blob/main/Data%20Loading%20and%20Variable%20Assigning.ipynb).
+
 <br>
 <br>
 Work in progress...
@@ -137,6 +132,12 @@ N. Gebodh, Z. Esmaeilpour, A. Datta, and M. Bikson, "Dataset of Concurrent EEG, 
 
 <br>
 <br>
+
+## 📩 Contact
+For collaborations, press inquiries, or questions:
+- Email: [soul.syrup@yandex.com](mailto:soul.syrup@yandex.com) or [soul.syrupp@gmail.com](mailto:soul.syrupp@gmail.com)
+- Discord: soul_syrup
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">EEG-Chaos-Kuramoto-Neural-Net</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Synthetic-Intelligence-Labs" property="cc:attributionName" rel="cc:attributionURL">Synthetic Intelligence Labs</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory#fullTextFileContent" rel="dct:source">https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory#fullTextFileContent</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Synthetic-Intelligence-Labs" rel="cc:morePermissions">Synthetic Intelligence Labs</a>.
 
