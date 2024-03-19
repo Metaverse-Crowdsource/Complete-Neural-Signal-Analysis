@@ -28,7 +28,9 @@ We want to take the necessary steps towards connecting the human brain to a sili
 <br>
 <h1 align="center">Explanation</h1>
 
-The central aim of this research project is to predict the electroencephalographic (EEG) effects of transcranial electrical stimulation (tES) by integrating chaos theory, dynamical systems theory, and a neural net stack. This is due to the importance of nonlinear dynamics in understanding brain activity.
+[Phase 2] We are currently delving deeper into the effects of the TES on the EEG data, including resonance and harmonice, as well as using quantum mechanics mathematics to understand more abstract connections between each channel. This is a collaboration with Pinotsis Lab, headed by Dr. Dimitris Pinotsis at City, University of London. [**Pinotsis Lab**](https://www.pinotsislab.com/ )
+
+[Phase 1] The central aim of this research project is to predict the electroencephalographic (EEG) effects of transcranial electrical stimulation (tES) by integrating chaos theory, dynamical systems theory, and a neural net stack. This is due to the importance of nonlinear dynamics in understanding brain activity.
 
 This research has significant potential implications for the field of brain-computer interfaces, particularly for the novel area of connecting a human brain to a biohybrid silicon/biological computer[1] through a biological neural interface[2].
 
@@ -40,6 +42,7 @@ This research could contribute significantly to the field of decoding and encodi
 
 <br>
 <br>
+
 Work in progress...
 <br>
 <br>
@@ -96,6 +99,7 @@ Data include within participant application of nine High-Definition tES (HD-tES)
 
 Participants maintained a ball at the center of the screen and were periodically stimulated (with low-intensity noninvasive brain stimulation) for 30 secs with combinations of 9 stimulation montages.
 
+- : Systems and states, including harmonics in TES EEG data.
 
 **Our Working Research Report:** [Artificial Intelligence for EEG Prediction: Applied Chaos Theory](https://www.researchgate.net/publication/374615955_Artificial_Intelligence_for_EEG_Prediction_Applied_Chaos_Theory) https://arxiv.org/abs/2402.03316
 
