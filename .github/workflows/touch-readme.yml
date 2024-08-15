@@ -1,0 +1,255 @@
+name: Update README, Sitemap, and Website
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update README
+      run: touch README.md
+
+    - name: Update sitemap
+      run: |
+        echo "<?xml version='1.0' encoding='UTF-8'?>" > sitemap.xml
+        echo "<urlset xmlns='https://www.sitemaps.org/schemas/sitemap/0.9'>" >> sitemap.xml
+        echo "  <url>" >> sitemap.xml
+        echo "    <loc>https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/</loc>" >> sitemap.xml
+        echo "    <lastmod>$(date --utc +%Y-%m-%dT%H:%M:%S+00:00)</lastmod>" >> sitemap.xml
+        echo "    <changefreq>daily</changefreq>" >> sitemap.xml
+        echo "    <priority>1.0</priority>" >> sitemap.xml
+        echo "  </url>" >> sitemap.xml
+        echo "</urlset>" >> sitemap.xml
+      shell: bash
+
+    - name: Generate robots.txt
+      run: |
+        echo "User-agent: *" > robots.txt
+        echo "Disallow:" >> robots.txt
+        echo "Sitemap: https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml" >> robots.txt
+      shell: bash
+
+    - name: Update index.html with SEO and sitemap reference
+      run: |
+        sed -i '/<\/head>/i <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />' index.html
+        sed -i '/<\/head>/i <meta name="description" content="Complete Neural Signal Analysis focuses on bio-silicon intelligence systems and advanced AI, catering to government research, defense, and cybersecurity agencies.">' index.html
+        sed -i '/<\/head>/i <meta name="description" lang="de" content="Die Complete Neural Signal Analysis konzentriert sich auf bio-siliciumbasierte Intelligenzsysteme und fortschrittliche KI, die sich an Regierungsforschung, Verteidigung und Cybersicherheitsbehörden richten.">' index.html
+        sed -i '/<\/head>/i <meta name="description" lang="ru" content="Лаборатории Complete Neural Signal Analysis сосредоточены на био-силиконовых интеллектуальных системах и передовом ИИ, обслуживающем правительственные исследования, оборонные и кибербезопасные агентства.">' index.html
+        sed -i '/<\/head>/i <meta name="description" lang="zh" content="Complete Neural Signal Analysis 专注于生物硅智能系统和先进的人工智能，服务于政府研究、国防和网络安全机构。">' index.html
+        sed -i '/<\/head>/i <meta name="description" lang="ja" content="Complete Neural Signal Analysisは、生体シリコンインテリジェンスシステムと高度なAIに焦点を当てており、政府の研究、防衛、およびサイバーセキュリティ機関に対応しています。">' index.html
+        sed -i '/<\/head>/i <meta name="keywords" content="DARPA, BMBF, government research, defense applications, AI, cybersecurity, synthetic intelligence, advanced technology, bio-silicon, darknet, AI defense, AI research, innovation grants, public funding, research funding, government contracts, national security, strategic technologies, cutting-edge research, intelligent systems, emerging technologies, sustainable development, military technology, dual-use technologies, UKRI, Horizon Europe, CERN, NSF (National Science Foundation), NIH (National Institutes of Health), DoD (Department of Defense), DoE (Department of Energy), cybersecurity R&D, DARPA challenges, homeland security, AI-enabled systems, edge computing, Bio-cybernetic systems, hybrid intelligence, neural interface technologies, autonomous AI, neuromorphic computing, bioinformatics for defense, AI-assisted decision-making, critical infrastructure protection, cross-domain AI solutions, disruptive technologies, autonomous systems, secure AI, quantum cryptography, AI ethics, bio-inspired computing, deep learning models, government innovation, AI policy, defense technology innovation, advanced materials research, sustainable AI, defense R&D, precision AI, high-performance computing, neural augmentation, adaptive systems, critical infrastructure AI, AI in healthcare, public-private partnerships, smart defense, bio-silicon research">' index.html
+        sed -i '/<\/head>/i <meta name="keywords" lang="de" content="DARPA, BMBF, Horizon Europe, CERN, Regierungsforschung, Verteidigungsanwendungen, KI, Cybersicherheit, synthetische Intelligenz, fortschrittliche Technologie, Bio-Silicium, Verschlüsselung, KI-Verteidigung, KI-Forschung, Forschungsförderung, Zukunftstechnologien, Bundesinnovationsprogramm, Sicherheitsforschung, Digitalisierung und Innovation, Industrielle Automatisierung, Robuste Systeme, Wirtschaft 4.0, Datensicherheit, Technologietransfer, BMBF (Bundesministerium für Bildung und Forschung), DFG (Deutsche Forschungsgemeinschaft), Fraunhofer-Institut, Industrie 4.0, KI (Künstliche Intelligenz), Verteidigungstechnologie, Cybersicherheitsstrategie, ZIM (Zentrales Innovationsprogramm Mittelstand), Disruptive Technologien, autonome Systeme, sichere KI, Quantenkryptographie, KI-Ethik, bio-inspirierte Informatik, Deep-Learning-Modelle, Regierungsinnovation, KI-Politik, Innovationsförderung Verteidigung, Hochleistungsrechnen, adaptive Systeme, Infrastruktur-KI, KI im Gesundheitswesen, öffentlich-private Partnerschaften, intelligente Verteidigung, Bio-Silicium-Forschung">' index.html
+        sed -i '/<\/head>/i <meta name="keywords" lang="ru" content="MOST, Minobrnauki, правительственные исследования, оборонные приложения, ИИ, кибербезопасность, синтетический интеллект, передовые технологии, био-силикон, тёмная сеть, Tor, глубокая сеть, даркнет, шифрование, защита ИИ, исследования ИИ, ГРУ, СВР, Министерство обороны Российской Федерации, Росатом, Ростех, Фонд перспективных исследований, Национальный центр управления обороной Российской Федерации, Национальный исследовательский центр "Курчатовский институт", Система разведывательных сетей, Инновационные технологии, Цифровая трансформация, Искусственный интеллект для обороны, Нейронные сети, Государственные гранты, Научные исследования и разработки, Программы поддержки инноваций, Кибербезопасность, Высокие технологии, Интеллектуальные системы, Сколково (Skolkovo), Российский фонд фундаментальных исследований (РФФИ), Министерство цифрового развития (Минцифра), Минобрнауки (Министерство образования и науки), Стратегический ИИ, Передовые материалы, Биокибернетические системы, Оборонные инновации, Искусственные нейронные сети, Дисруптивные технологии, автономные системы, защищенный ИИ, квантовая криптография, этика ИИ, био-вдохновленные вычисления, модели глубокого обучения, государственная инновация, политика ИИ, инновации обороны, высокопроизводительные вычисления, адаптивные системы, ИИ для критической инфраструктуры, ИИ в здравоохранении, государственно-частные партнерства, умная оборона, исследование био-силикона">' index.html
+        sed -i '/<\/head>/i <meta name="keywords" lang="zh" content="MOST, Minobrnauki, 政府研究, 中国航天科技集团, 中国电子科技集团公司, 国防科技大学, 国家安全委员会, 解放军信息工程大学, 战略支援部队, 深网, 国家实验室, 中国科学院, 清华大学国家实验室, 中国人民解放军, 国防部, 国防应用, 人工智能, 网络安全, 合成智能, 先进技术, 生物硅, 暗网, Tor, 深网, 黑暗网, 加密, 人工智能防御, 人工智能研究, 科技创新, 智能制造升级, 创新科技产业, 国家重点研发计划, 人工智能发展战略, 高端制造业, 数字经济, 智慧城市, 国家科技项目, 信息安全技术, MOST (中华人民共和国科学技术部), NSFC (国家自然科学基金委员会), 智能制造的人工智能, AI安全, 国家国防研发, 5G驱动的人工智能, 深度学习系统, 新基建 (新型基础设施建设), 颠覆性技术, 自主系统, 安全AI, 量子密码学, AI伦理, 生物启发计算, 深度学习模型, 政府创新, AI政策, 国防技术创新, 高性能计算, 自适应系统, 关键基础设施AI, 医疗AI, 公私合作, 智能国防, 生物硅研究">' index.html
+        sed -i '/<\/head>/i <meta name="keywords" lang="ja" content="DARPA, BMBF, 政府研究, 防衛アプリケーション, AI, サイバーセキュリティ, 合成インテリジェンス, 先進技術, バイオシリコン, ダークウェブ, Tor, ディープウェブ, ダークネット, 暗号化, AI防御, AI研究, 産業技術イノベーション, 人工知能研究開発, 国防技術, 科学技術振興, サイバーインフラ, 次世代産業, 先端技術プロジェクト, 技術開発プログラム, 量子技術研究, 知能化システム, 経済産業省 (METI), 新エネルギー・産業技術総合開発機構 (NEDO), AIロボティクス, 防衛のためのサイバーセキュリティ, スマート社会5.0, 高度AI, 量子コンピューティングの取り組み, 破壊的技術, 自律システム, セキュアAI, 量子暗号, AI倫理, バイオインスパイア計算, ディープラーニングモデル, 政府イノベーション, AI政策, 国防技術革新, 高性能コンピューティング, 適応システム, 重要インフラAI, 医療AI, 公私連携, スマートディフェンス, バイオシリコン研究">' index.html
+        sed -i '/<\/head>/i <meta name="robots" content="index, follow">' index.html
+        sed -i '/<\/head>/i <meta name="author" content="Complete Neural Signal Analysis">' index.html
+        sed -i '/<\/head>/i <meta name="target" content="government, military, research, cybersecurity">' index.html
+        sed -i '/<\/head>/i <meta name="subject" content="Advanced AI and Bio-Silicon Systems for Government Research and Defense Applications">' index.html
+        sed -i '/<\/head>/i <meta name="coverage" content="Worldwide">' index.html
+        sed -i '/<\/head>/i <meta name="distribution" content="global">' index.html
+        sed -i '/<\/head>/i <meta name="cybersecurity" content="Cyber Defense, Secure Communications, Data Encryption, AES-256, Government Research">' index.html
+        sed -i '/<\/head>/i <meta name="security" content="high">' index.html
+        sed -i '/<\/head>/i <meta name="classification" content="Top Secret, Defense, Cybersecurity, Research, Advanced AI">' index.html
+        sed -i '/<\/head>/i <link rel="canonical" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/">' index.html
+        sed -i 's/https:\/\/synthetic-intelligence-labs.github.io\/SIL-website\//https:\/\/github.com\/Metaverse-Crowdsource\/Complete-Neural-Signal-Analysis\//g' index.html
+        sed -i '/<\/head>/i <link rel="alternate" hreflang="en" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/" />' index.html
+        sed -i '/<\/head>/i <link rel="alternate" hreflang="de" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/de/" />' index.html
+        sed -i '/<\/head>/i <link rel="alternate" hreflang="ru" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/ru/" />' index.html
+        sed -i '/<\/head>/i <link rel="alternate" hreflang="zh" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/zh/" />' index.html
+        sed -i '/<\/head>/i <link rel="alternate" hreflang="ja" href="https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/ja/" />' index.html
+        sed -i '/<\/head>/i <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdnjs.cloudflare.com;">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="X-Frame-Options" content="DENY">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="X-Content-Type-Options" content="nosniff">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="Referrer-Policy" content="no-referrer">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=(self)">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">' index.html
+        sed -i '/<\/head>/i <meta http-equiv="Expect-CT" content="enforce, max-age=86400, report-uri='https://your-report-uri.com/'">' index.html
+      shell: bash
+
+    - name: Create structured data (JSON-LD)
+      run: |
+        echo '<script type="application/ld+json">' > structured-data.json
+        echo '{' >> structured-data.json
+        echo '"@context": "https://schema.org",' >> structured-data.json
+        echo '"@type": "Organization",' >> structured-data.json
+        echo '"name": "Complete Neural Signal Analysis",' >> structured-data.json
+        echo '"url": "https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis",' >> structured-data.json
+        echo '"logo": "https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/images/logo.png",' >> structured-data.json
+        echo '"sameAs": [' >> structured-data.json
+        echo '"https://www.tiktok.com/@complete_neural_signal_analysis",' >> structured-data.json
+        echo '"https://www.linkedin.com/company/complete_neural_signal_analysis",' >> structured-data.json
+        echo '"https://twitter.com/complete_neural_signal_analysis",' >> structured-data.json
+        echo '"https://www.facebook.com/complete_neural_signal_analysis"' >> structured-data.json
+        echo '],' >> structured-data.json
+        echo '"contactPoint": [{' >> structured-data.json
+        echo '"@type": "ContactPoint",' >> structured-data.json
+        echo '"email": "info@complete_neural_signal_analysis.com",' >> structured-data.json
+        echo '"contactType": "Customer Service"' >> structured-data.json
+        echo '}],' >> structured-data.json
+        echo '"description": {' >> structured-data.json
+        echo '"en": "Complete Neural Signal Analysis focuses on bio-silicon intelligence systems and advanced AI, catering to government research, defense, and cybersecurity agencies.",' >> structured-data.json
+        echo '"de": "Die Complete Neural Signal Analysis konzentriert sich auf bio-siliciumbasierte Intelligenzsysteme und fortschrittliche KI, die sich an Regierungsforschung, Verteidigung und Cybersicherheitsbehörden richten.",' >> structured-data.json
+        echo '"ru": "Лаборатории Complete Neural Signal Analysis сосредоточены на био-силиконовых интеллектуальных системах и передовом ИИ, обслуживающем правительственные исследования, оборонные и кибербезопасные агентства.",' >> structured-data.json
+        echo '"zh": "Complete Neural Signal Analysis 专注于生物硅智能系统和先进的人工智能，服务于政府研究、国防和网络安全机构。",' >> structured-data.json
+        echo '"ja": "Complete Neural Signal Analysisは、生体シリコンインテリジェンスシステムと高度なAIに焦点を当てており、政府の研究、防衛、およびサイバーセキュリティ機関に対応しています。"' >> structured-data.json
+        echo '}' >> structured-data.json
+        echo '}' >> structured-data.json
+        echo '</script>' >> structured-data.json
+      shell: bash
+
+    - name: Update index.html with structured data
+      run: |
+        sed -i '/<\/head>/i <script type="application/ld+json">' index.html
+        cat structured-data.json >> index.html
+        sed -i '/<\/head>/i </script>' index.html
+      shell: bash
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md sitemap.xml robots.txt index.html structured-data.json
+        git commit -m "Update README, sitemap, robots.txt, index.html, and add structured data for SEO"
+        git push
+
+    - name: Ping search engines
+      run: |
+        curl -s "https://www.google.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.bing.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.duckduckgo.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.yandex.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.baidu.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.sogou.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.so.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://search.mail.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+      shell: bash
+
+    - name: Ping all listed websites
+      run: |
+        curl -s "https://www.scopus.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.webofscience.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://ieeexplore.ieee.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.darpa.mil/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://pubmed.ncbi.nlm.nih.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.sciencedirect.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.jstor.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://scholar.google.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.ebscohost.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.proquest.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.ebsco.com/academic-libraries/subjects/academic-search-premier/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.proquest.com/products-services/dissertations/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://eric.ed.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.apa.org/pubs/databases/psycinfo/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.nih.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.ncbi.nlm.nih.gov/pmc/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://pubs.acs.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://iopscience.iop.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.ssrn.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://ethos.bl.uk/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://oatd.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://core.ac.uk/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.base-search.net/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://cds.cern.ch/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://europepmc.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://academic.oup.com/journals/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.cambridge.org/core/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://arxiv.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.cnki.net/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.wanfangdata.com.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.paper.edu.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.cqvip.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.nstl.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://elibrary.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://cyberleninka.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://elibrary.ru/project_risc.asp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.neicon.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.sel.org.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.tib.eu/en/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.dart-europe.eu/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.dimdi.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://link.springer.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.dfg.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.narcis.nl/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.knaw.nl/en/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.elsevier.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.wageningenacademic.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://ci.nii.ac.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.jstage.jst.go.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://reo.nii.ac.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://japanlinkcenter.org/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://kaken.nii.ac.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.goszakupki.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.grants.gov.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.rscf.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://budget.gov.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.minobrnauki.gov.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.ccgp.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.nsfc.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.most.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://service.most.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.spacechina.com/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.cetc.com.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.nudt.edu.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.cas.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.mod.gov.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.tsinghua.edu.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://svr.gov.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://mil.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.rosatom.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://rostec.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://fpi.gov.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.nrcki.ru/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "http://www.csc.edu.cn/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.grants.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.sam.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.sam.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://projectreporter.nih.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.nsf.gov/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.bund.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.elfi.info/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.dfg.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.bmwi.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.kfw.de/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://jglobal.jst.go.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://kaken.nii.ac.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.japan.go.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.jst.go.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+        curl -s "https://www.nedo.go.jp/ping?sitemap=https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis/sitemap.xml"
+      shell: bash
+
+    - name: Monitor site performance with Lighthouse
+      uses: actions/github-script@v4
+      with:
+        script: |
+          const { context } = require('@actions/github');
+          const lighthouse = require('lighthouse');
+          const chromeLauncher = require('chrome-launcher');
+
+          (async () => {
+            const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
+            const options = { logLevel: 'info', output: 'json', onlyCategories: ['performance'], port: chrome.port };
+            const runnerResult = await lighthouse('https://github.com/Metaverse-Crowdsource/Complete-Neural-Signal-Analysis', options);
+
+            const report = runnerResult.report;
+            fs.writeFileSync('lighthouse-report.json', report);
+
+            console.log('Performance score was', runnerResult.lhr.categories.performance.score * 100);
+
+            await chrome.kill();
+          })();
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Commit and push Lighthouse report
+      run: |
+        git add lighthouse-report.json
+        git commit -m "Add Lighthouse performance report"
+        git push
+      shell: bash
